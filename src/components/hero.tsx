@@ -17,7 +17,7 @@ export default function Hero() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center lg:justify-start">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button asChild size="lg" className="glowing-btn">
                 <Link href="#projects">Lihat Portofolio</Link>
               </Button>
               <Button asChild size="lg" variant="outline">

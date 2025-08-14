@@ -16,8 +16,8 @@ export default function Contact() {
         // In a real app, you'd handle form submission here.
         // For this example, we'll just show a success toast.
         toast({
-            title: "Message Sent!",
-            description: "Thanks for reaching out. I'll get back to you soon.",
+            title: "Pesan Terkirim!",
+            description: "Terima kasih telah menghubungi. Saya akan segera membalasnya.",
         });
         (event.target as HTMLFormElement).reset();
     };
@@ -27,9 +27,9 @@ export default function Contact() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline text-foreground">Contact Me</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline text-foreground">Hubungi Saya</h2>
                         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed font-body">
-                            Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to discussing new opportunities.
+                            Punya proyek atau hanya ingin menyapa? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk mendiskusikan peluang baru.
                         </p>
                         <div className="flex space-x-4">
                              <Button asChild variant="ghost" size="icon" className="h-10 w-10">
@@ -51,18 +51,18 @@ export default function Contact() {
                     </div>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div className="space-y-2">
-                            <Label htmlFor="name" className="font-body">Name</Label>
-                            <Input id="name" type="text" placeholder="Your Name" required className="font-body" />
+                            <Label htmlFor="name" className="font-body">Nama</Label>
+                            <Input id="name" type="text" placeholder="Nama Anda" required className="font-body" />
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="email" className="font-body">Email</Label>
-                            <Input id="email" type="email" placeholder="Your Email" required className="font-body"/>
+                            <Input id="email" type="email" placeholder="Email Anda" required className="font-body"/>
                         </div>
                         <div className="space-y-2">
-                            <Label htmlFor="message" className="font-body">Message</Label>
-                            <Textarea id="message" placeholder="Your Message" required className="font-body min-h-[120px]" />
+                            <Label htmlFor="message" className="font-body">Pesan</Label>
+                            <Textarea id="message" placeholder="Pesan Anda" required className="font-body min-h-[120px]" />
                         </div>
-                        <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-body">Send Message</Button>
+                        <Button type="submit" size="lg" className="glowing-btn w-full font-body">Kirim Pesan</Button>
                     </form>
                 </div>
             </div>

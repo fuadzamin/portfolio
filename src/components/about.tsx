@@ -7,15 +7,15 @@ export default function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-6 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline text-foreground">
-                About Me
+                Tentang Saya
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed font-body">
-                Mahasiswa semester 7 Informatika yang memiliki minat besar di pengembangan Web dan IoT. Berpengalaman membuat website dan aplikasi berbasis PHP, MySQL, serta proyek IoT dengan ESP32.
+                Saya adalah seorang mahasiswa semester 7 di Universitas Putra Bangsa Kebumen dengan minat yang kuat dalam pengembangan web dan Internet of Things (IoT). Saya sedang mencari kesempatan magang untuk menerapkan dan mengembangkan keterampilan teknis saya dalam proyek-proyek nyata.
             </p>
             <Button asChild variant="secondary" size="lg">
                 <a href="/cv-placeholder.pdf" download="CV-Fuadz-Misbahul-Amin.pdf">
                     <Download className="mr-2 h-5 w-5" />
-                    Download CV
+                    Unduh CV
                 </a>
             </Button>
         </div>
