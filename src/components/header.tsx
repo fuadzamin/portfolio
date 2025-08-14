@@ -40,15 +40,15 @@ export default function Header() {
   const NavContent = ({ onLinkClick }: { onLinkClick?: () => void }) => (
     <>
       {navLinks.map(({ href, label }) => (
-        <Link key={href} href={href} legacyBehavior>
-          <a
-            onClick={onLinkClick}
-            className={`transition-colors hover:text-primary ${
-              activeSection === href.substring(1) ? 'text-primary font-semibold' : 'text-muted-foreground'
-            }`}
-          >
-            {label}
-          </a>
+        <Link
+          key={href}
+          href={href}
+          onClick={onLinkClick}
+          className={`transition-colors hover:text-primary ${
+            activeSection === href.substring(1) ? 'text-primary font-semibold' : 'text-muted-foreground'
+          }`}
+        >
+          {label}
         </Link>
       ))}
     </>
@@ -61,10 +61,8 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="#home" legacyBehavior>
-          <a className="text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary">
-            Fuadz Misbahul Amin
-          </a>
+        <Link href="#home" className="text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary">
+          Fuadz Misbahul Amin
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
           <NavContent />
