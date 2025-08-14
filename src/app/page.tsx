@@ -1,3 +1,4 @@
+import ClientOnly from '@/components/client-only';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
 import About from '@/components/about';
@@ -9,7 +10,9 @@ import Footer from '@/components/footer';
 export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col bg-background">
-      <Header />
+      <ClientOnly>
+        <Header />
+      </ClientOnly>
       <main className="flex-1">
         <Hero />
         <About />
