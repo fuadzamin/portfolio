@@ -25,6 +25,9 @@ export default function Footer() {
                     <Mail className="h-5 w-5 text-muted-foreground transition-colors hover:text-primary" />
                 </Link>
             </Button>
+            <Button variant="ghost" size="sm" onClick={() => window.print()} aria-label="Export as PDF">
+                Export as PDF
+            </Button>
         </div>
       </div>
     </footer>
