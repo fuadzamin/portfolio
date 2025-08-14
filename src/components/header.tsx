@@ -16,14 +16,15 @@ const navLinks = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const isCurrentlyScrolled = window.scrollY > 10;
+      setIsScrolled(isCurrentlyScrolled);
       
       const sections = ['home', 'about', 'projects', 'skills', 'contact'];
-      let currentSection = '';
+      let currentSection = 'home';
 
       for (const sectionId of sections) {
         const sectionEl = document.getElementById(sectionId);
@@ -32,15 +33,14 @@ export default function Header() {
         }
       }
       
-      if (currentSection) {
-        setActiveSection(currentSection);
-      }
+      setActiveSection(currentSection);
     };
 
-    // Set initial state after mount
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Run on mount to set initial state
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
