@@ -89,7 +89,7 @@ html {
     @apply transition-colors duration-300;
   }
   .skill-badge-hover:hover {
-    @apply bg-primary text-black;
+    @apply text-primary;
   }
 
   .skill-card-hover {
