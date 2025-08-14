@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://placehold.co/400x400.png"
+              src="/image/profil.png"
               alt="Fuadz Misbahul Amin"
               width={400}
               height={400}

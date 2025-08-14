@@ -8,41 +8,41 @@ const projectData = [
   {
     title: 'Website jayabersama.my.id',
     description: 'Membangun website profil perusahaan Jaya Bersama menggunakan WordPress. Mendesain dan menyesuaikan tema agar sesuai dengan identitas brand, serta mengoptimalkan SEO dan kecepatan website.',
-    image: 'https://placehold.co/600x400.png',
+    image: '/image/jaya.png',
     tags: ['WordPress', 'SEO', 'Branding'],
-    link: '#',
+    link: 'https://jayabersama.my.id',
     aiHint: 'corporate website'
   },
   {
     title: 'Sistem Pakan Ikan Otomatis IoT',
     description: 'Mengembangkan sistem pemberian pakan ikan otomatis berbasis ESP32. Sistem ini dapat mengatur takaran, jadwal, dan penyebaran pakan, serta dapat dipantau melalui aplikasi Blynk.',
-    image: 'https://placehold.co/600x400.png',
+    image: '/image/pakan.png',
     tags: ['ESP32', 'Blynk', 'IoT'],
-    link: '#',
+    link: 'https://www.tiktok.com/@_fuadz_/video/7524647599240924423?is_from_webapp=1&sender_device=pc&web_id=7402249237452572161',
     aiHint: 'iot project'
   },
   {
     title: 'Website Kopi Kuy',
     description: 'Membuat landing page interaktif untuk brand kopi fiktif. Menampilkan menu, profil tim, testimoni, dan integrasi WhatsApp untuk pemesanan.',
-    image: 'https://placehold.co/600x400.png',
+    image: '/image/cafe.png', // Image for the "Website Kopi Kuy" project
     tags: ['HTML', 'CSS', 'JavaScript', 'API'],
-    link: '#',
+    link: 'cafe-mauve-delta.vercel.app',
     aiHint: 'coffee shop'
   },
   {
     title: 'Sistem Rental & Travel Mobil',
     description: 'Membangun website pemesanan rental dan travel mobil dengan fitur booking, pembayaran, dan histori transaksi. Dilengkapi dashboard admin untuk pengelolaan data.',
-    image: 'https://placehold.co/600x400.png',
+    image: '/image/travel.png',
     tags: ['PHP', 'MySQL', 'Dashboard'],
-    link: '#',
+    link: 'https://github.com/fuadzamin/rental-travel-mobil.git',
     aiHint: 'dashboard travel'
   },
     {
     title: 'Website Manajemen Turnamen',
     description: 'Membangun website CRUD sederhana menggunakan PHP dan MySQL untuk mengelola data turnamen, termasuk data peserta dan berita.',
-    image: 'https://placehold.co/600x400.png',
+    image:'/image/turnamen.png',
     tags: ['PHP', 'MySQL', 'CRUD'],
-    link: '#',
+    link: 'https://github.com/fuadzamin/website-Esport.git',
     aiHint: 'tournament management'
   }
 ];

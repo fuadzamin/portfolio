@@ -13,7 +13,7 @@ export default function About() {
                 Saya adalah seorang mahasiswa semester 7 di Universitas Putra Bangsa Kebumen dengan minat yang kuat dalam pengembangan web dan Internet of Things (IoT). Saya sedang mencari kesempatan magang untuk menerapkan dan mengembangkan keterampilan teknis saya dalam proyek-proyek nyata.
             </p>
             <Button asChild variant="secondary" size="lg">
-                <a href="/cv-placeholder.pdf" download="CV-Fuadz-Misbahul-Amin.pdf">
+                <a href="/cv.pdf" download="CV-Fuadz-Misbahul-Amin.pdf">
                     <Download className="mr-2 h-5 w-5" />
                     Unduh CV
                 </a>
