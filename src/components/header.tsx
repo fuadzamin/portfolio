@@ -21,19 +21,26 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
+      
       const sections = ['home', 'about', 'projects', 'skills', 'contact'];
-      let currentSection = 'home';
+      let currentSection = '';
+
       for (const sectionId of sections) {
         const sectionEl = document.getElementById(sectionId);
         if (sectionEl && window.scrollY >= sectionEl.offsetTop - 150) {
           currentSection = sectionId;
         }
       }
-      setActiveSection(currentSection);
+      
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Set initial state
+    // Set initial state after mount
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
