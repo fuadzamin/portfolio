@@ -20,13 +20,13 @@ export default function Skills() {
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {Object.entries(skillsData).map(([category, skills]) => (
-            <Card key={category} className="flex flex-col">
+            <Card key={category} className="flex flex-col skill-card-hover">
               <CardHeader>
                 <CardTitle className="font-headline text-xl">{category}</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-1 flex-wrap content-start gap-2">
                 {skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="font-body text-sm">
+                  <Badge key={skill} variant="secondary" className="font-body text-sm skill-badge-hover">
                     {skill}
                   </Badge>
                 ))}
